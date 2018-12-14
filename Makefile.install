@@ -1,0 +1,7 @@
+all : ~/.config/nvim/init.vim ~/.tmux.conf
+
+~/.config/nvim/init.vim : nvimrc
+	cp $^ $@
+
+~/.tmux.conf : tmux.conf
+	cp $^ $@
